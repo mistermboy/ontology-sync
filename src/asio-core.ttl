@@ -29,6 +29,8 @@
 @base <http://purl.org/hercules/asio/core#> .
 
 
+asio:User rdf:type owl:Class ;
+
 asio:AcademicDegree rdf:type owl:Class ;
                     rdfs:comment "A qualification awarded to students upon successful completion of a course of study in higher education."@en ;
                     rdfs:label "Academic degree"@en ,
