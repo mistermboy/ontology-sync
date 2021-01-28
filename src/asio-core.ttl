@@ -29,6 +29,35 @@
 @base <http://purl.org/hercules/asio/core#> .
 
 
+asio:AcademicDegree rdf:type owl:Class ;
+                    rdfs:comment "A qualification awarded to students upon successful completion of a course of study in higher education."@en ;
+                    rdfs:label "Academic degree"@en ,
+                               "Grade universitaire"@fr ,
+                               "Grade universitaire"@fr-be ,
+                               "Grade universitaire"@fr-ca ,
+                               "Grade universitaire"@fr-ch ,
+                               "Grade universitaire"@fr-fr ,
+                               "Grao académico"@gl ,
+                               "Grau acadèmic"@ca-ad ,
+                               "Grau acadèmic"@ca-es ,
+                               "Grau académico"@pt-pt ,
+                               "Grau acadêmico"@pt-br ,
+                               "Título académico"@es-es ,
+                               "Unibertsitate-gradu"@eu ;
+                    skos:prefLabel "Academic degree"@en ,
+                                   "Grade universitaire"@fr ,
+                                   "Grade universitaire"@fr-be ,
+                                   "Grade universitaire"@fr-ca ,
+                                   "Grade universitaire"@fr-ch ,
+                                   "Grade universitaire"@fr-fr ,
+                                   "Grao académico"@gl ,
+                                   "Grau acadèmic"@ca-ad ,
+                                   "Grau acadèmic"@ca-es ,
+                                   "Grau académico"@pt-pt ,
+                                   "Grau acadêmico"@pt-br ,
+                                   "Título académico"@es-es ,
+                                   "Unibertsitate-gradu"@eu .
+
 ###  http://purl.org/hercules/asio/core#hasSealOfQuality
 asio:hasSealOfQuality rdf:type owl:ObjectProperty ;
                       rdfs:domain foaf:Agent ;
