@@ -58,8 +58,3 @@ asio:AcademicDegree rdf:type owl:Class ;
                                    "Título académico"@es-es ,
                                    "Unibertsitate-gradu"@eu .
 
-###  http://purl.org/hercules/asio/core#hasSealOfQuality
-asio:hasSealOfQuality rdf:type owl:ObjectProperty ;
-                      rdfs:domain foaf:Agent ;
-                      rdfs:range asio:ResearchInstitute ;
-                      rdfs:label "has seal of quality"@en .
