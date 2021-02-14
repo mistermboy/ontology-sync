@@ -30,3 +30,4 @@
 asio:Pablo  rdf:type owl:NamedIndividual .
 asio:Clase rdf:type owl:NamedIndividual .
 asio:Prueba rdf:type owl:NamedIndividual .
+asio:FuncionaPorDiox rdf:type owl:NamedIndividual .
