@@ -27,8 +27,13 @@
 @prefix timezone: <http://www.w3.org/2006/timezone#> .
 @prefix humantechreadiness: <http://sweetontology.net/humanTechReadiness#> .
 
-asio:Pablo  rdf:type owl:NamedIndividual .
+
 asio:Clase rdf:type owl:NamedIndividual .
 asio:Prueba rdf:type owl:NamedIndividual .
 asio:FuncionaPorDiox rdf:type owl:NamedIndividual .
 asio:Menosmaaal rdf:type owl:NamedIndividual .
+
+asio:Publishes rdf:type owl:ObjectProperty .
+
+asio:Pablo  rdf:type owl:NamedIndividual ;
+           asio:Publishes asio:whatever .
