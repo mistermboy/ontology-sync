@@ -26,6 +26,7 @@
 @prefix semcerif: <http://eurocris.org/ontology/semcerif#> .
 @prefix timezone: <http://www.w3.org/2006/timezone#> .
 @prefix humantechreadiness: <http://sweetontology.net/humanTechReadiness#> .
+@prefix weso: <http://www.weso.es/> .
 
 
 
@@ -36,3 +37,14 @@ asio:Publishes rdf:type owl:ObjectProperty .
 
 asio:Pablo  rdf:type owl:NamedIndividual ;
            asio:Publishes asio:whatever .
+
+weso:Labra rdf:type owl:NamedIndividual ;
+           weso:esProfesor weso:Uniovi ;
+           weso:esInvestigador weso:Cientifico ;
+           weso:trabajaEn weso:CasaDeLabra .
+
+
+weso:Cientifico rdf:type owl:Class ;
+           weso:propiedad1 "loquesea" .
+
+asio:trabajaEn rdf:type owl:ObjectProperty .
