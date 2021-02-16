@@ -59,7 +59,12 @@ asio:esAlumno rdf:type owl:ObjectProperty .
 
 
 
+weso:Alex rdf:type owl:NamedIndividual ;
+           weso:esAlumno2 weso:Uniovi ;
+           weso:esInvestigador2 weso:Uniovi .
 
+
+asio:esAlumno2 rdf:type owl:ObjectProperty .
 
 
 
