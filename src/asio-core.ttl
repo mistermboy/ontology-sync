@@ -48,3 +48,15 @@ weso:Cientifico rdf:type owl:Class ;
            weso:propiedad1 "loquesea" .
 
 asio:trabajaEn rdf:type owl:ObjectProperty .
+
+
+weso:Peibol rdf:type owl:NamedIndividual ;
+           weso:esAlumno weso:Uniovi ;
+           weso:esInvestigador weso:Uniovi ;
+
+
+asio:esAlumno rdf:type owl:ObjectProperty .
+
+
+
+
