@@ -68,3 +68,9 @@ asio:esAlumno2 rdf:type owl:ObjectProperty .
 
 
 
+weso:Othmane rdf:type owl:NamedIndividual ;
+           weso:esAlumno3 weso:Uniovi ;
+           weso:esInvestigador3 weso:Uniovi .
+
+
+asio:esAlumno3 rdf:type owl:ObjectProperty .
