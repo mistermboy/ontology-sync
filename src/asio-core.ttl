@@ -28,9 +28,5 @@
 @prefix humantechreadiness: <http://sweetontology.net/humanTechReadiness#> .
 
 
-asio:Clase rdf:type owl:Class .
 
-asio:Publishes rdf:type owl:ObjectProperty .
-
-asio:Pablo  rdf:type owl:NamedIndividual ;
            asio:Publishes asio:whatever .
