@@ -28,10 +28,7 @@
 @prefix humantechreadiness: <http://sweetontology.net/humanTechReadiness#> .
 
 
-asio:Clase rdf:type owl:NamedIndividual .
-asio:Prueba rdf:type owl:NamedIndividual .
-asio:FuncionaPorDiox rdf:type owl:NamedIndividual .
-asio:Menosmaaal rdf:type owl:NamedIndividual .
+asio:Clase rdf:type owl:Class .
 
 asio:Publishes rdf:type owl:ObjectProperty .
 
