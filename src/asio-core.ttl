@@ -16,19 +16,4 @@
 @prefix schema: <http://schema.org/> .
 
 
-###  http://purl.org/hercules/asio/core#ResearchInstitute
-asio:ResearchInstitute rdf:type owl:Class ;
-                       rdfs:subClassOf foaf:Organization ;
-                       rdfs:comment "An establishment founded for doing research."@en ;
-                       rdfs:label "Centre d'investigació"@ca-es ,
-                                  "Centre de recerca"@ca-ad ,
-                                  "Centre de recherche"@fr ,
-                                  "Centro de investigación"@es ,
-                                  "Centro de investigação"@pt ,
-                                  "Research institute"@en ;
-                       skos:prefLabel "Centre d'investigació"@ca-es ,
-                                      "Centre de recerca"@ca-ad ,
-                                      "Centre de recherche"@fr ,
-                                      "Centro de investigación"@es ,
-                                      "Centro de investigação"@pt ,
-                                      "Research institute"@en .
+
