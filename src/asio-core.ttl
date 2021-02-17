@@ -1,1 +1,34 @@
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix : <http://www.asio.es/asioontologies/asio#> .
+@prefix ro: <http://purl.org/wf4ever/ro#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix asioIndividuals: <http://www.asio.es/asioinstances/asio#> .
+@prefix asioModules: <http://purl.org/hercules/asio/modules#> .
+@prefix asio: <http://purl.org/hercules/asio/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
 
+
+###  http://purl.org/hercules/asio/core#ResearchInstitute
+asio:ResearchInstitute rdf:type owl:Class ;
+                       rdfs:subClassOf foaf:Organization ;
+                       rdfs:comment "An establishment founded for doing research."@en ;
+                       rdfs:label "Centre d'investigació"@ca-es ,
+                                  "Centre de recerca"@ca-ad ,
+                                  "Centre de recherche"@fr ,
+                                  "Centro de investigación"@es ,
+                                  "Centro de investigação"@pt ,
+                                  "Research institute"@en ;
+                       skos:prefLabel "Centre d'investigació"@ca-es ,
+                                      "Centre de recerca"@ca-ad ,
+                                      "Centre de recherche"@fr ,
+                                      "Centro de investigación"@es ,
+                                      "Centro de investigação"@pt ,
+                                      "Research institute"@en .
