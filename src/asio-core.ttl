@@ -1,76 +1,177 @@
-@prefix : <http://purl.org/hercules/asio/core#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix : <http://www.asio.es/asioontologies/asio#> .
 @prefix ro: <http://purl.org/wf4ever/ro#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix deo: <http://purl.org/spar/deo/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix pso: <http://purl.org/spar/pso/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix asioIndividuals: <http://www.asio.es/asioinstances/asio#> .
+@prefix asioModules: <http://purl.org/hercules/asio/modules#> .
 @prefix asio: <http://purl.org/hercules/asio/core#> .
-@prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix doco: <http://purl.org/spar/doco/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix vivo: <http://vivoweb.org/ontology/core#> .
-@prefix cerif: <http://purl.org/cerif/> .
-@prefix fabio: <http://purl.org/spar/fabio/> .
-@prefix frapo: <http://purl.org/cerif/frapo#> .
-@prefix modules: <http://purl.org/hercules/asio/modules#> .
-@prefix semcerif: <http://eurocris.org/ontology/semcerif#> .
-@prefix timezone: <http://www.w3.org/2006/timezone#> .
-@prefix humantechreadiness: <http://sweetontology.net/humanTechReadiness#> .
-@prefix weso: <http://www.weso.es/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+
+
+###  http://purl.org/hercules/asio/core#ResearchInstitute
+asio:ResearchInstitute rdf:type owl:Class ;
+                       rdfs:subClassOf foaf:Organization ;
+                       rdfs:comment "An establishment founded for doing research."@en ;
+                       rdfs:label "Centre d'investigació"@ca-es ,
+                                  "Centre de recerca"@ca-ad ,
+                                  "Centre de recherche"@fr ,
+                                  "Centro de investigación"@es ,
+                                  "Centro de investigação"@pt ,
+                                  "Research institute"@en ;
+                       skos:prefLabel "Centre d'investigació"@ca-es ,
+                                      "Centre de recerca"@ca-ad ,
+                                      "Centre de recherche"@fr ,
+                                      "Centro de investigación"@es ,
+                                      "Centro de investigação"@pt ,
+                                      "Research institute"@en .
+
+
+# PASA
+asioIndividuals:CentroDeRegulacionGenomica rdf:type owl:NamedIndividual ,
+                                        asio:ResearchInstitute ;
+                               asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_BFSDNIG ;
+                               asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfExcellence ;
+                               asio:participant asioIndividuals:ChromDesign ,
+                                                asioIndividuals:EASIGenomics ;
+                               asio:member asioIndividuals:AmyCurwin ;
+                               asio:associatedWith asioModules:ES_UNIVERSITY_039 ;
+                               rdfs:label "Centre de Regulació Genòmica"@ca-es ,
+                                          "Centre for Genomic Regulation"@en ,
+                                          "Centro de Regulación Genómica"@es ;
+                               skos:altLabel "CRG"@ca-es .
+
+
+# PASA
+asioIndividuals:CentroDeRegulacion rdf:type owl:NamedIndividual ,
+                                        asio:ResearchInstitute ;
+                               asio:hasResearchLine "ES_SCIENTIFIC_DOMAIN_LEVEL_3_BFSDNIG" ;
+                               asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfExcellence ;
+                               asio:participant asioIndividuals:EASI ;
+                               asio:member asioIndividuals:EmilioRubiera ;
+                               asio:associatedWith asioModules:ES_UNIVERSITY_039 .
+
+
+asioIndividuals:EASIGenomics rdf:type owl:NamedIndividual ,
+                            asio:EuropeanProject ;
+                      asio:projectStartDate "2019-02-01"^^xsd:date ;
+                      asio:projectEndDate "2023-01-31"^^xsd:date ;
+                      asio:isFundedBy asioIndividuals:Horizon2020 ;
+                      asio:projectBudget "9991267"^^xsd:decimal ;
+                      asio:hasResearchField asioIndividuals:ES_SUBJECT_AREA_LEVEL_3_BMC .
+
+asioIndividuals:EASI rdf:type owl:NamedIndividual ,
+                            asio:EuropeanProject ;
+                      asio:projectStartDate "2019-02-01"^^xsd:date ;
+                      asio:projectEndDate "2023-01-31"^^xsd:date ;
+                      asio:isFundedBy asioIndividuals:Horizon2020 ;
+                      asio:projectBudget "9991267"^^xsd:decimal ;
+                      asio:hasResearchField asioIndividuals:ES_SUBJECT_AREA_LEVEL_3_BMC .
+     
+
+
+asioIndividuals:SeveroOchoaSealOfExcellence rdf:type owl:NamedIndividual ,
+                                          asio:SealOfQuality ;
+                                 rdfs:label "Apoyo y acreditación de Centros de Excelencia «Severo Ochoa»"@es ,
+                                            "Seal of excellence «Severo Ochoa»"@en .
+
+
+asioIndividuals:AmyCurwin rdf:type owl:NamedIndividual ;
+                          schema:name "Amy";
+                          asio:plays asio:Researching ;
+                          asio:authors asio:MockPublication1 ;
+                          asio:isMemberOf asioIndividuals:CentreDeRegulacioGenomica ;
+                          rdfs:label "Amy Curwin"@en .
+
+
+asioIndividuals:EmilioRubiera rdf:type owl:NamedIndividual ;
+                          schema:givenName "Emilio";
+                          asio:plays asio:Researching ;
+                          asio:authors asio:MockPublication1 ;
+                          asio:isMemberOf asioIndividuals:CentreDeRegulacioGenomica ;
+                          rdfs:label "Amy Curwin"@en .
 
 
 
+asioModules:ES_UNIVERSITY_039 rdf:type owl:NamedIndividual .
+                              
 
-asio:Clase rdf:type owl:Class .
+# FALLA
+asioIndividuals:CentroDeRegulacioGenomicaMAL rdf:type owl:NamedIndividual;
+                               asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_BFSDNIG ;
+                               asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfExcellence ;
+                               asio:participant asioIndividuals:ChromDesign ,
+                                                asioIndividuals:EASIGenomics ;
+                               asio:member asioIndividuals:AmyCurwin ;
+                               asio:associatedWith asioModules:ES_UNIVERSITY_039 .
 
-asio:Publishes rdf:type owl:ObjectProperty .
+# FALLA
+asioIndividuals:CentroDeRegulacioGenomicaMAL2 rdf:type owl:NamedIndividual ,
+                                        asio:ResearchInstitute ;
+                               asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_BFSDNIG ;
+                               asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfNotExcellence ;
+                               asio:participant asioIndividuals:ChromDesign ,
+                                                asioIndividuals:EASIGenomics ;
+                               asio:member asioIndividuals:AmyCurwin ;
+                               asio:associatedWith asioModules:ES_UNIVERSITY_039 .
 
-asio:Pablo  rdf:type owl:NamedIndividual ;
-           asio:Publishes asio:whatever .
-
-weso:Labra rdf:type owl:NamedIndividual ;
-           weso:esProfesor weso:Uniovi ;
-           weso:esInvestigador weso:Cientifico ;
-           weso:trabajaEn weso:CasaDeLabra .
-
-
-weso:Cientifico rdf:type owl:Class ;
-           weso:propiedad1 "loquesea" .
-
-asio:trabajaEn rdf:type owl:ObjectProperty .
-
-
-weso:Peibol rdf:type owl:NamedIndividual ;
-           weso:esAlumno weso:Uniovi ;
-           weso:esInvestigador weso:Uniovi .
-
-
-asio:esAlumno rdf:type owl:ObjectProperty .
-
-
-
-weso:Alex rdf:type owl:NamedIndividual ;
-           weso:esAlumno2 weso:Uniovi ;
-           weso:esInvestigador2 weso:Uniovi .
-
-
-asio:esAlumno2 rdf:type owl:ObjectProperty .
+# FALLA
+asioIndividuals:CentroDeRegulacioGenomicaMAL3 rdf:type owl:NamedIndividual ,
+                                        asio:ResearchInstitute ;
+                               asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_BFSDNIG ;
+                               asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfNotExcellence ;
+                               asio:participant asioIndividuals:ChromDesign ,
+                                                asioIndividuals:EASIGenomics2 ;
+                               asio:member asioIndividuals:AmyCurwin ;
+                               asio:associatedWith asioModules:ES_UNIVERSITY_039 .
 
 
+# FALLA
+asioIndividuals:CentroDeRegulacionGenomicaMAL4 rdf:type owl:NamedIndividual ,
+                                        asio:ResearchInstitute ;
+                               asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_BFSDNIG ;
+                               asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfExcellence ;
+                               asio:participant asioIndividuals:ChromDesign ,
+                                                asioIndividuals:EASIGenomics ;
+                               asio:member asioIndividuals:PabloMenendez ;
+                               asio:associatedWith asioModules:ES_UNIVERSITY_039 .
 
-weso:Othmane rdf:type owl:NamedIndividual ;
-           weso:esAlumno3 weso:Uniovi ;
-           weso:esInvestigador3 weso:Uniovi .
+
+# FALLA
+asioIndividuals:CentroDeRegulacionGenomicaMAL5 rdf:type owl:NamedIndividual ,
+                                        asio:ResearchInstitute ;
+                               asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_BFSDNIG ;
+                               asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfExcellence ;
+                               asio:participant asioIndividuals:ChromDesign ,
+                                                asioIndividuals:EASIGenomics ;
+                               asio:member asioIndividuals:AmyCurwin ;
+                               asio:associatedWith asioModules:ES_UNIVERSITY_040 .
+
+asioIndividuals:EASIGenomics2 rdf:type owl:NamedIndividual ,
+                            asio:EuropeanProject ;
+                      asio:projectStartDate "2019-02-01"^^xsd:date ;
+                      asio:projectEndDate "2023-01-31" ;
+                      asio:isFundedBy asioIndividuals:Horizon2020 .
 
 
-asio:esAlumno3 rdf:type owl:ObjectProperty .
+
+asioIndividuals:SeveroOchoaSealOfNotExcellence rdf:type asio:EuropeanProject.
+
+asioIndividuals:PabloMenendez rdf:type owl:NamedIndividual ;
+                          schema:givenName "Pablo";
+                          schema:name "Peibol";
+                          asio:plays asio:Researching ;
+                          asio:authors asio:MockPublication1 ;
+                          asio:isMemberOf asioIndividuals:CentreDeRegulacioGenomica ;
+                          rdfs:label "Amy Curwin"@en .
+
+
+asioModules:ES_UNIVERSITY_040 a owl:NamedIndividual;
+                              schema:name "Universidad de Oviedo" .
