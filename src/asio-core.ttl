@@ -16,4 +16,4 @@
 @prefix schema: <http://schema.org/> .
 
 
-
+:Pablo a :Researcher .
