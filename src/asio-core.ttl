@@ -19,5 +19,3 @@
 :Pablo a :Researcher .
 
 :Alvaro a :Mono .
-
-:Fer a :Crack
