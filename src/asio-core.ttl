@@ -19,3 +19,5 @@
 :Pablo a :Researcher .
 
 :Alvaro a :Mono .
+
+:Lucas a :Crack .
