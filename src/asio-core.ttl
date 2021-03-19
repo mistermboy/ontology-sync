@@ -23,3 +23,10 @@
 :Lucas a :Crack .
 
 :Cayetano a :Ciudadano .
+
+
+asio:DoctoralDegree rdf:type owl:Class ;
+      asio:participates :WESO .
+
+asio:participates rdf:type owl:ObjectProperty .
+
