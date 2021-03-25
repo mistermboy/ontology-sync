@@ -34,3 +34,4 @@ asio:participates rdf:type owl:ObjectProperty .
 asio:Jefe rdf:type owl:Class .
 asio:human rdf:type owl:Class .
 asio:pepe rdf:type owl:Class .
+asio:murcia rdf:type owl:Class .
