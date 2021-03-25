@@ -17,3 +17,6 @@
 
 asio:human a owl:Class ;
  asio:researchesIn asio:WESO .
+
+
+asio:Jay a owl:Class .
