@@ -20,3 +20,4 @@ asio:human a owl:Class ;
 
 
 asio:Jay a owl:Class .
+asio:BlinBlin a owl:Class .
