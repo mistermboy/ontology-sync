@@ -19,3 +19,4 @@ asio:human a owl:Class .
 asio:researcher a owl:Class .
 asio:capo a owl:Class .
 asio:kf a owl:Class .
+asio:wow a owl:Class .
