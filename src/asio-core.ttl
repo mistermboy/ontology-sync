@@ -35,3 +35,4 @@ asio:Jefe rdf:type owl:Class .
 asio:human rdf:type owl:Class .
 asio:pepe rdf:type owl:Class .
 asio:murcia rdf:type owl:Class .
+asio:slns rdf:type owl:Class .
