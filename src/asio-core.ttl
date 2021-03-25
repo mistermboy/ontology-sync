@@ -30,3 +30,5 @@ asio:DoctoralDegree rdf:type owl:Class ;
 
 asio:participates rdf:type owl:ObjectProperty .
 
+
+asio:Jefe rdf:type owl:Class .
