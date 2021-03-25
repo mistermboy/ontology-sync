@@ -18,3 +18,4 @@
 
 
 asio:human a owl:Class .
+asio:body a owl:Class .
