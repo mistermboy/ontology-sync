@@ -19,3 +19,4 @@
 
 asio:human a owl:Class .
 asio:body a owl:Class .
+asio:isHuman a owl:ObjectProperty .
