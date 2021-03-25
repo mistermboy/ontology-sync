@@ -17,6 +17,7 @@
 
 
 
-asio:human a owl:Class .
+asio:human a owl:Class ;
+    asio:researchesIn asio:WESO .
 asio:body a owl:Class .
 asio:isHuman a owl:ObjectProperty .
