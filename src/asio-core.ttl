@@ -21,3 +21,4 @@ asio:capo a owl:Class .
 asio:kf a owl:Class .
 asio:wow a owl:Class .
 asio:murcia a owl:Class .
+asio:testing a owl:Class .
