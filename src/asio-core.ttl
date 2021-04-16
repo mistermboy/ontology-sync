@@ -14,11 +14,3 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema: <http://schema.org/> .
-
-asio:human a owl:Class .
-asio:researcher a owl:Class .
-asio:capo a owl:Class .
-asio:kf a owl:Class .
-asio:wow a owl:Class .
-asio:murcia a owl:Class .
-asio:testing a owl:Class .
