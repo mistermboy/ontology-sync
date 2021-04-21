@@ -17,3 +17,4 @@
 
 asio:human a owl:Class .
 asio:car a owl:Class .
+asio:Pablo a owl:Class .
