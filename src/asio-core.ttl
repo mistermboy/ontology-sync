@@ -17,4 +17,3 @@
 
 asio:Pablo a owl:ObjectProperty  .
 
-asio:Car a owl:ObjectProperty  .
